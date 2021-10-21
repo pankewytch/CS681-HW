@@ -1,0 +1,14 @@
+Testcase: edu.umb.cs681.hw3.RunnablePrimeGeneratorThreadTest
+Test: RunnablePrimeGeneratorWithTwoThread() took 3 sec(s)
+Test: RunnablePrimeGeneratorWithEightThread() took 1 sec(s)
+Test: RunnablePrimeGeneratorWithSixteenThread() took 1 sec(s)
+Test: RunnablePrimeGeneratorWithFourThread() took 1 sec(s)
+Test: RunnablePrimeGeneratorWithOneThread() took 4 sec(s)
+Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 12 sec(s)
+------------- Standard Output ---------------
+Total time in milliseconds for 2 threads is 3520
+Total time in milliseconds for 8 threads is 1416
+Total time in milliseconds for 16 threads is 1072
+Total time in milliseconds for 4 threads is 1755
+Total time in milliseconds for 1 thread is 4670
+------------- ---------------- ---------------
