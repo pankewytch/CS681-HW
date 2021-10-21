@@ -5,8 +5,8 @@
     <echo message="JUNIT: ${env.JUNIT}" />
     <echo message="ANT_HOME: ${env.ANT_HOME}" />
 
-    <mkdir dir="bin/edu/umb/cs680/hw13"/>
-    <mkdir dir="test/bin/edu/umb/cs680/hw13"/>
+    <mkdir dir="bin/edu/umb/cs680/hw1"/>
+    <mkdir dir="test/bin/edu/umb/cs680/hw1"/>
     <mkdir dir="test/reports"/>
 
     <property name="src" location="src" />
