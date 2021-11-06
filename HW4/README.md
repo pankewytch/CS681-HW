@@ -1,0 +1,1 @@
+To run this via ant, you need to provide a command line argument by doing -Ddatapathin=\<path> where path is the file path to the data file including the file name and extension.
