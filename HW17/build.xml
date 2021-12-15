@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<project name="hw17_cs681" basedir="."  default="clean">
+    <property environment="env"/>
+    <echo message="JUNIT: ${env.JUNIT}" />
+    <echo message="ANT_HOME: ${env.ANT_HOME}" />
+
+    <mkdir dir="bin/edu/umb/cs681/hw17"/>
+
+    <property name="src" location="src" />
+    <property name="bin" location="bin" />
+
+    <path id="classpath">
+        <pathelement location="bin" />
+    </path>
+    <echo message="${toString:classpath}" />
+
+    <target name="init">
+        <mkdir dir="${bin}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${bin}" includeAntRuntime="no">
+            <classpath refid="classpath"/>
+            <include name="edu/umb/cs681/hw17/*.java"/>
+        </javac>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="edu.umb.cs681.hw17.Driver"
+              classpathref="classpath"
+              fork="true">
+        </java>
+    </target>
+
+    <target name="clean" depends="run">
+        <delete includeemptydirs="true">
+            <fileset dir="${bin}/edu/umb/cs681/hw17" includes="**/*"/>
+        </delete>
+    </target>
+
+</project>
